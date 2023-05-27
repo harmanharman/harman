@@ -1,7 +1,0 @@
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^harishikesh.com [NC,OR]
-
-RewriteCond %{HTTP_HOST} ^www.harishikesh.com [NC]
-
-RewriteRule ^(.*)$ https://harishikesh.net/$1 [L,R=301,NC]
