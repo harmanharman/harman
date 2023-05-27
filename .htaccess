@@ -1,0 +1,2 @@
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html
+RewriteRule ^index\.html$ http://www.harishikesh.com/ [R=301,L]
