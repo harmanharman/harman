@@ -1,2 +1,7 @@
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html
-RewriteRule ^index\.html$ http://www.harishikesh.com/ [R=301,L]
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^harishikesh.com [NC,OR]
+
+RewriteCond %{HTTP_HOST} ^www.harishikesh.com [NC]
+
+RewriteRule ^(.*)$ https://harishikesh.net/$1 [L,R=301,NC]
